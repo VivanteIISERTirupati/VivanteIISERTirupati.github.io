@@ -11,7 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fontdiner+Swanky&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,7 +33,7 @@
     }
 
     body {
-      background-image: url("https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Copy%20of%20Vivante'24%20Poster%20final.png");
+      background-color: #760404;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -67,7 +71,7 @@
     .navbar-button:hover {
       background-color: #f4de8b;
       transition: 0.5s;
-      
+
     }
 
     .navbar-button:hover h5 {
@@ -130,7 +134,7 @@
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style='background-color: #760404;'>
     <!-- Avatar image in top left corner -->
     <img
-      src="https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/vivante%20logo.png"
+      src="https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Logo.png"
       style="width:100%">
     <a href="#" class="w3-bar-item w3-padding-large navbar-button">
       <i class="fa fa-home w3-xxlarge"></i>
@@ -167,7 +171,185 @@
 
     <div class='w3-center w3-container'>
       <div class='w3-center'>
-       <h1>HOME PAGE CONTENT GOES HERE</h1>
+
+        <div class='w3-container'>
+          <style>
+            .bigEntrance {
+              animation-name: bigEntrance;
+              -webkit-animation-name: bigEntrance;
+              animation-duration: 1.6s;
+              -webkit-animation-duration: 1.6s;
+              animation-timing-function: ease-out;
+              -webkit-animation-timing-function: ease-out;
+              visibility: visible !important;
+              animation-count: 1;
+            }
+
+            @keyframes bigEntrance {
+              0% {
+                transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+                opacity: 0.2;
+              }
+
+              30% {
+                transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+                opacity: 1;
+              }
+
+              45% {
+                transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              60% {
+                transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              75% {
+                transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              90% {
+                transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              100% {
+                transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            @-webkit-keyframes bigEntrance {
+              0% {
+                -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+                opacity: 0.2;
+              }
+
+              30% {
+                -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+                opacity: 1;
+              }
+
+              45% {
+                -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              60% {
+                -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              75% {
+                -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              90% {
+                -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              100% {
+                -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            .fontdiner-swanky-regular {
+              font-family: "Fontdiner Swanky", serif;
+              font-weight: 400;
+              font-style: normal;
+            }
+
+            .coming-soon {
+              font-family: "Fontdiner Swanky";
+              font-size: 9vh;
+              color: #f4de8b;
+            }
+
+            .slideUp {
+              animation-name: slideUp;
+              -webkit-animation-name: slideUp;
+              animation-duration: 1s;
+              -webkit-animation-duration: 1s;
+              animation-timing-function: ease;
+              -webkit-animation-timing-function: ease;
+              visibility: visible !important;
+              animation-count: 1;
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%);
+                opacity: 1;
+              }
+
+              50% {
+                transform: translateY(-8%);
+                opacity: 1;
+              }
+
+              65% {
+                transform: translateY(4%);
+                opacity: 1;
+              }
+
+              80% {
+                transform: translateY(-4%);
+                opacity: 1;
+              }
+
+              95% {
+                transform: translateY(2%);
+                opacity: 1;
+              }
+
+              100% {
+                transform: translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            @-webkit-keyframes slideUp {
+              0% {
+                -webkit-transform: translateY(100%);
+              }
+
+              50% {
+                -webkit-transform: translateY(-8%);
+              }
+
+              65% {
+                -webkit-transform: translateY(4%);
+              }
+
+              80% {
+                -webkit-transform: translateY(-4%);
+              }
+
+              95% {
+                -webkit-transform: translateY(2%);
+              }
+
+              100% {
+                -webkit-transform: translateY(0%);
+              }
+            }
+
+       
+          </style>
+          <img class='bigEntrance'
+            src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
+            style='width: 50%; height: auto;'>
+          <div class='w3-content w3-center'>
+            <h1 class='coming-soon slideUp'> COMING SOON....</h1>
+
+          </div>
+        </div>
       </div>
     </div>
 
