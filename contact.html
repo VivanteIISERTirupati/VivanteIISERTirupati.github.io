@@ -27,8 +27,16 @@
       color: #f4de8b !important
     }
 
+    h1 {
+      font-size: 7vh;
+    }
+
+    h2 {
+      font-size: 5vh;
+    }
+
     p {
-      font-size: 3vh;
+      font-size: 2.5vh;
       font-weight: bold;
     }
 
@@ -111,7 +119,7 @@
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {
       width: 75px;
-      background:#f8f7b0 ;
+      background: #f8f7b0;
     }
 
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -185,187 +193,35 @@
   <div class="w3-padding-large" id="main">
     <!-- Header/Home -->
 
-
-    <div class='w3-center w3-container'>
-      <div class='w3-center'>
-
-        <div class='w3-container'>
-          <style>
-            .bigEntrance {
-              animation-name: bigEntrance;
-              -webkit-animation-name: bigEntrance;
-              animation-duration: 1.6s;
-              -webkit-animation-duration: 1.6s;
-              animation-timing-function: ease-out;
-              -webkit-animation-timing-function: ease-out;
-              visibility: visible !important;
-              animation-count: 1;
-            }
-
-            @keyframes bigEntrance {
-              0% {
-                transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
-                opacity: 0.2;
-              }
-
-              30% {
-                transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
-                opacity: 1;
-              }
-
-              45% {
-                transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              60% {
-                transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              75% {
-                transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              90% {
-                transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              100% {
-                transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            @-webkit-keyframes bigEntrance {
-              0% {
-                -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
-                opacity: 0.2;
-              }
-
-              30% {
-                -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
-                opacity: 1;
-              }
-
-              45% {
-                -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              60% {
-                -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              75% {
-                -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              90% {
-                -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              100% {
-                -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            .fontdiner-swanky-regular {
-              font-family: "Fontdiner Swanky", serif;
-              font-weight: 400;
-              font-style: normal;
-            }
-
-            .coming-soon {
-              font-family: "Fontdiner Swanky";
-              font-size: 9vh;
-              color: #f4de8b;
-            }
-
-            .slideUp {
-              animation-name: slideUp;
-              -webkit-animation-name: slideUp;
-              animation-duration: 1s;
-              -webkit-animation-duration: 1s;
-              animation-timing-function: ease;
-              -webkit-animation-timing-function: ease;
-              visibility: visible !important;
-              animation-count: 1;
-            }
-
-            @keyframes slideUp {
-              0% {
-                transform: translateY(100%);
-                opacity: 1;
-              }
-
-              50% {
-                transform: translateY(-8%);
-                opacity: 1;
-              }
-
-              65% {
-                transform: translateY(4%);
-                opacity: 1;
-              }
-
-              80% {
-                transform: translateY(-4%);
-                opacity: 1;
-              }
-
-              95% {
-                transform: translateY(2%);
-                opacity: 1;
-              }
-
-              100% {
-                transform: translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            @-webkit-keyframes slideUp {
-              0% {
-                -webkit-transform: translateY(100%);
-              }
-
-              50% {
-                -webkit-transform: translateY(-8%);
-              }
-
-              65% {
-                -webkit-transform: translateY(4%);
-              }
-
-              80% {
-                -webkit-transform: translateY(-4%);
-              }
-
-              95% {
-                -webkit-transform: translateY(2%);
-              }
-
-              100% {
-                -webkit-transform: translateY(0%);
-              }
-            }
-          </style>
-          <img class='bigEntrance'
-            src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
-            style='width: 50%; height: auto;'>
-          <div class='w3-content w3-center'>
-            <h1 class='coming-soon slideUp'> COMING SOON....</h1>
-
-          </div>
-        </div>
-      </div>
+    <div class='w3-container'>
+      <h1 class = 'w3-center'>Contact Us!</h1>
+      <p style='text-align: justify;'>Questions? Queries? Reach out to us on any of us below, or just shoot an email to
+        vivante@sac.iisertirupati.ac.in</p>
+    </div>
+    <div class = 'w3-container w3-quarter'>
+      <h2>Finance Team</h2>
+      <p>Rasheed: +91 99899 82914</p>
+      <p>Mithan: +91 63626 21272</p>
+      <p>Shahma: +91 91882 50270</p>
+    </div>
+    <div class = 'w3-container w3-quarter'>
+      <h2>Design Team</h2>
+      <p>Rishi Sandeep: +91 75699 94876</p>
+      <p>Aishwarya Ratna: [REDACTED]</p>
+    </div>
+    <div class = 'w3-container w3-quarter'>
+      <h2>Events Organization</h2>
+      <p>Hitesh: +91 70756 28151</p>
+      <p>Sruthi: +91 888975 28937</p>
+    </div>
+    <div class = 'w3-container w3-quarter'>
+      <h2>Public relations</h2>
+      <p>Srividya: +91 89775 02399</p>
+      <p>Hari Kalpana: +91 83318 58678</p>
+    </div>
+    <div class = 'w3-container w3-quarter'>
+      <h2>Housing and Dining</h2>
+      <p>Akshitha: +91 75692 68262</p>
     </div>
 
 
