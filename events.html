@@ -111,7 +111,7 @@
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {
       width: 75px;
-      background:#f8f7b0 ;
+      background: #f8f7b0;
     }
 
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -185,186 +185,65 @@
 
 
     <div class='w3-center w3-container'>
-      <div class='w3-center'>
+      <h1>Events</h1>
+      <p style='text-align: justify;'>Vivante is coming at you in full swing this year, with a whole host of fun filled
+        events. Take a look at what
+        we have planed in store for you.</p>
+    </div>
 
-        <div class='w3-container'>
-          <style>
-            .bigEntrance {
-              animation-name: bigEntrance;
-              -webkit-animation-name: bigEntrance;
-              animation-duration: 1.6s;
-              -webkit-animation-duration: 1.6s;
-              animation-timing-function: ease-out;
-              -webkit-animation-timing-function: ease-out;
-              visibility: visible !important;
-              animation-count: 1;
-            }
+    <style>
+      .event-dabba {
+        background-color: var(--background);
+      }
 
-            @keyframes bigEntrance {
-              0% {
-                transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
-                opacity: 0.2;
-              }
+      .event-dabba button {
+        background-color: var(--textcolor);
+        color: var(--background)
+      }
 
-              30% {
-                transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
-                opacity: 1;
-              }
+      .event-dabba p {
+        color: var(--textcolor) !important;
+      }
+    </style>
 
-              45% {
-                transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              60% {
-                transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              75% {
-                transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              90% {
-                transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              100% {
-                transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            @-webkit-keyframes bigEntrance {
-              0% {
-                -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
-                opacity: 0.2;
-              }
-
-              30% {
-                -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
-                opacity: 1;
-              }
-
-              45% {
-                -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              60% {
-                -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              75% {
-                -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              90% {
-                -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-
-              100% {
-                -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            .fontdiner-swanky-regular {
-              font-family: "Fontdiner Swanky", serif;
-              font-weight: 400;
-              font-style: normal;
-            }
-
-            .coming-soon {
-              font-family: "Fontdiner Swanky";
-              font-size: 9vh;
-              color: #f4de8b;
-            }
-
-            .slideUp {
-              animation-name: slideUp;
-              -webkit-animation-name: slideUp;
-              animation-duration: 1s;
-              -webkit-animation-duration: 1s;
-              animation-timing-function: ease;
-              -webkit-animation-timing-function: ease;
-              visibility: visible !important;
-              animation-count: 1;
-            }
-
-            @keyframes slideUp {
-              0% {
-                transform: translateY(100%);
-                opacity: 1;
-              }
-
-              50% {
-                transform: translateY(-8%);
-                opacity: 1;
-              }
-
-              65% {
-                transform: translateY(4%);
-                opacity: 1;
-              }
-
-              80% {
-                transform: translateY(-4%);
-                opacity: 1;
-              }
-
-              95% {
-                transform: translateY(2%);
-                opacity: 1;
-              }
-
-              100% {
-                transform: translateY(0%);
-                opacity: 1;
-              }
-            }
-
-            @-webkit-keyframes slideUp {
-              0% {
-                -webkit-transform: translateY(100%);
-              }
-
-              50% {
-                -webkit-transform: translateY(-8%);
-              }
-
-              65% {
-                -webkit-transform: translateY(4%);
-              }
-
-              80% {
-                -webkit-transform: translateY(-4%);
-              }
-
-              95% {
-                -webkit-transform: translateY(2%);
-              }
-
-              100% {
-                -webkit-transform: translateY(0%);
-              }
-            }
-          </style>
-          <img class='bigEntrance'
-            src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
-            style='width: 50%; height: auto;'>
-          <div class='w3-content w3-center'>
-            <h1 class='coming-soon slideUp'> COMING SOON....</h1>
-
-          </div>
-        </div>
+    <div class='w3-container event-dabba w3-padding-32' style='--background: #571414; --textcolor: #e1c38c'>
+      <div class='w3-third w3-center'>
+        <img src="images/events/carnival charades.jpg" width="70%">
+      </div>
+      <div class='w3-twothird'>
+        <p>
+          Experience the magic of mime at Vivante'24, our annual college fest! Join the First Ever Mime Competition in
+          VIVANTE history. Showcase your creativity and expression through silence and gesture. Teams of 5-7 members,
+          5-minute duration, no dialogues or props. Enrich the vibrant atmosphere and captivate the audience! Register
+          now!
+        </p>
+        <div class='w3-container w3-center'><a
+            href='https://docs.google.com/forms/d/e/1FAIpQLSexCwQzyywR4QKeGNjciCTZSFlpzHmTMhrHNeObbDNKQdVlzQ/viewform'><button
+              class='w3-button'> Register Now!</button></a></div>
       </div>
     </div>
+
+    <div class='w3-container event-dabba w3-padding-32' style='--background: #af1a18; --textcolor: #f6d8c4'>
+      <div class='w3-third w3-center w3-hide-medium w3-hide-large'>
+        <img src="images/events/harmony.png" width="70%">
+      </div>
+      <div class='w3-twothird'>
+        <p>
+          Own the stage and awaken your inner musician by signing up for the upcoming music contest. Whether you're a
+          one man act or a melody in a chorus, the spotlight is yours with our Solo and Group Performance categories.
+          The mic arrangements and backing track arrangements will be provided on the day,but the participants will have
+          to arrange for the instruments.
+        </p>
+        <div class='w3-container w3-center'><a
+            href='https://docs.google.com/forms/d/e/1FAIpQLSfZ2cX9lSVopJ91ZcTtJTLRGeYUsiAjFPxSZSoTQPAVUxpxOw/viewform?usp=sf_link'><button
+              class='w3-button'> Register Now!</button></a></div>
+      </div>
+      <div class='w3-third w3-center w3-hide-small'>
+        <img src="images/events/harmony.png" width="70%">
+      </div>
+
+    </div>
+
 
 
 
