@@ -32,6 +32,12 @@
       font-weight: bold;
     }
 
+    @media (max-width: 600px) {
+      p {
+        font-size: 2vh;
+      }
+    }
+
     body {
       background-color: #760404;
       background-size: cover;
@@ -139,6 +145,10 @@
       <i class="fa fa-home w3-xxlarge"></i>
       <h5>HOME</h5>
     </a>
+    <a href="https://vivanteiisertirupati.github.io/events" class="w3-bar-item w3-center navbar-button ">
+      <i class="fas fa-calendar w3-xxlarge"></i>
+      <h5>EVENTS</h5>
+    </a>
     <a href="https://vivanteiisertirupati.github.io/gallery" class="w3-bar-item  navbar-button ">
       <i class="fa fa-picture-o w3-xxlarge"></i><br>
       <h5>GALLERY</h5>
@@ -163,6 +173,7 @@
     <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large"
       style='background-color: #f8f7b0; color: #760404;'>
       <a href="https://vivanteiisertirupati.github.io/" class="w3-bar-item w3-button">HOME</a>
+      <a href = "https://vivanteiisertirupati.github.io/events" class = 'w3-bar-item w3-button' >EVENTS</a>
       <a href=" https://vivanteiisertirupati.github.io/gallery" class="w3-bar-item w3-button">GALLERY</a>
       <a href="https://vivanteiisertirupati.github.io/merch" class="w3-bar-item w3-button">MERCH</a>
       <a href="https://vivanteiisertirupati.github.io/contact" class="w3-bar-item w3-button">CONTACT</a>
@@ -212,12 +223,12 @@
         color: var(--textcolor) !important;
         text-align: justify;
       }
-
     </style>
 
     <div class='w3-container event-dabba ' style="--background: #655c55; --textcolor: #d4cfca;">
       <div class='w3-third w3-center'>
-        <img src="images/events/monkey's paw.jpg" width="110%">
+        <img class = 'w3-hide-small' src="images/events/monkey's paw.jpg" width="110%">
+        <img class = 'w3-hide-medium w3-hide-large' src="images/events/monkey's paw.jpg" width="100%">
       </div>
       <div class='w3-twothird w3-padding-32'>
         <div class='w3-content'>
@@ -225,11 +236,12 @@
             <img src='images/events/titles/monkeys paw title.png' width="47%">
           </div>
           <p>
-            From pages to the stage: Watch as the team at Jijivisha, IISER Tirupati's very own Drama Club bring to live a british classic, "The Monkey's Paw" by WW Jacobs.
+            From pages to the stage: Watch as the team at Jijivisha, IISER Tirupati's very own Drama Club bring to live
+            a british classic, "The Monkey's Paw" by WW Jacobs.
             Unlike the main character of the play, we're sure you won't have any regrets in attending this extravaganza
           </p>
           <div class='w3-container w3-center'>
-            <button style = 'background-color:  #a01f1f; width: 50%; border: none'>
+            <button style='background-color:  #a01f1f; width: 70%; border: none'>
               <p style="text-align: center;">Date: 5th April, 2023 <br> Time: 9:30 PM to 11:30 PM</p>
             </button>
           </div>
@@ -274,7 +286,8 @@
           <p>
             Dive into the heart of our
             carnival and experience the magic of dance like never before. Let your inhibitions melt away and your
-            spirits soar high as you join us in this spectacular extravaganza of rhythm and movement. Show off your passion, flair,
+            spirits soar high as you join us in this spectacular extravaganza of rhythm and movement. Show off your
+            passion, flair,
             and boundless joy on our stage. Let the music move you and the audience be captivated by your performance.
           </p>
           <div class='w3-container w3-center'><a
@@ -309,28 +322,23 @@
       </div>
     </div>
 
-    <div class='w3-container event-dabba '
-    style='--background: #000; --textcolor: #e1cb73;'>
-    <div class='w3-third w3-center'>
-      <img src="images/events/fashion show.jpg" width="100%">
-    </div>
-    <div class='w3-twothird w3-padding-32'>
-      <div class='w3-content'>
-        <div class='w3-center'>
-          <img src='images/events/titles/rythm escapade.svg' width="50%">
+    <div class='w3-container event-dabba ' style='--background: #cc2930; --textcolor: #fff;'>
+      <div class='w3-third w3-center'>
+        <img src="images/events/fashion show.jpg" width="100%">
+      </div>
+      <div class='w3-twothird w3-padding-32'>
+        <div class='w3-content'>
+          <div class='w3-center'>
+            <img src='images/events/titles/the show we see title.png' width="50%">
+          </div>
+          <p>
+            Step into the world of style and elegance at "The Show we See" fashion event! Embrace the runway with your
+            unique flair and creativity. Experience the latest trends and make a statement on our stage. Register now!
+          </p>
+          <div class='w3-container w3-center'><button class='w3-button' disabled>Register Now!</button></div>
         </div>
-        <p>
-          Dive into the heart of our
-          carnival and experience the magic of dance like never before. Let your inhibitions melt away and your
-          spirits soar high as you join us in this spectacular extravaganza of rhythm and movement. Show off your passion, flair,
-          and boundless joy on our stage. Let the music move you and the audience be captivated by your performance.
-        </p>
-        <div class='w3-container w3-center'><a
-            href='https://docs.google.com/forms/d/e/1FAIpQLSfpf_Rhry9d3qTUM0tuWVjYpCTjEKWbRQsIOp0O4Qrw54-GzA/viewform'><button
-              class='w3-button'> Register Now!</button></a></div>
       </div>
     </div>
-  </div>
 
 
 
