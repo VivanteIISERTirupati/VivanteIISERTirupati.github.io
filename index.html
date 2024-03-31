@@ -25,6 +25,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fontdiner+Swanky&family=Sancreek&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Electrolize&family=Fontdiner+Swanky&family=Sancreek&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     body,
     h1,
@@ -483,7 +490,7 @@
               Tirupati
             </h1>
 
-            <div class='w3-center info-iiser' style='text-align: justify;'>
+            <div class='w3-center info-iiser' style='text-align: justify; font-family: "Nunito", sans-serif;'>
               <p>IISER Tirupati is the sixth Institute in the chain of IISERs established by the Govt. of India under
                 the Ministry of Education for imparting quality education in basic sciences and for setting up
                 state-of-the-art research facilities for frontline and cutting-edge research in science. </p>
@@ -500,7 +507,7 @@
         <img src='images/homepage/vivante stylized.png' width='100%'>
       </div>
       <div class='w3-center' style="text-align: justify;">
-        <p>The theme for Vivante this year is “Carnival”—a gala of entertainment, exciting events, and good music.
+        <p style = 'font-family: "Lora", serif;'>The theme for Vivante this year is “Carnival”—a gala of entertainment, exciting events, and good music.
           Imagine stepping into a weekend where laughter echoes through the air, and where surprises await at every turn
         </p>
       </div>
@@ -508,10 +515,11 @@
         <style>
           .cards {
             display: flex;
-            flex-direction: row;
-            gap: 50px;
+            flex-direction: column;
+            /* Change to column layout for mobile */
+            gap: 20px;
+            /* Reduce the gap for mobile */
             width: 100%;
-            /* Set .cards to 100% width */
             margin: 0 auto;
           }
 
@@ -528,41 +536,52 @@
           }
 
           .cards .card {
-            padding-left: 5%;
-            padding-right: 5%;
+            padding: 20px;
+            /* Adjust padding for mobile */
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             text-align: center;
-            height: 200px;
-            flex-grow: 1;
-            /* Each card will take up equal space */
-            max-width: calc((100% / 3) - 15px);
-            /* Subtracting gap from total width */
+            height: auto;
+            /* Auto height for mobile */
             border-radius: 10px;
             color: white;
             cursor: pointer;
-            transition: 400ms;
+            transition: transform 400ms;
           }
 
           .cards .card p.tip {
             font-size: 1em;
             font-weight: 700;
-            
+            font-family: "Lora", serif;
           }
 
           .cards .card p.second-text {
-            font-size: .7em;
+            font-size: 0.7em;
+            font-family: "Noto Sans", sans-serif;
           }
 
           .cards .card:hover {
-            transform: scale(1.1, 1.1);
+            transform: scale(1.1);
           }
 
           .cards:hover>.card:not(:hover) {
             filter: blur(1px);
-            transform: scale(0.9, 0.9);
+            transform: scale(0.9);
+          }
+
+          @media (min-width: 768px) {
+            .cards {
+              flex-direction: row;
+              /* Switch back to row layout for larger screens */
+              gap: 50px;
+            }
+
+            .cards .card {
+              height: 200px;
+              flex-grow: 1;
+              max-width: calc((100% / 3) - 15px);
+            }
           }
         </style>
         <div class="cards">
@@ -598,11 +617,15 @@
           background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
+          background-size: cover;
           background-size: 100% auto;
         }
       </style>
+      <div class='w3-hide-medium w3-hide-large'>
+        <img src='images/homepage/dj danika at sunburn.jpg' style="width:100% height: auto;">
 
-      <div class="parallax">
+      </div>
+      <div class="parallax w3-hide-small">
         <div class='w3-half'>
           <img src='images/homepage/DJ Danika Stylized Photo.png'>
         </div>
@@ -612,7 +635,7 @@
       </div>
       <div class='w3-container'>
         <div class='w3-center'>
-          <p style="color: #eba7ff">Get ready to be electrified at Vivante with an unforgettable DJ concert by the
+          <p style="color: #eba7ff; font-family: 'Electrolize', sans-serif;">Get ready to be electrified at Vivante with an unforgettable DJ concert by the
             dynamic artist, Danika!
             Dance into the night to pulsating beats and immersive rhythms. Experience a thrilling journey into the world
             of music, creating unforgettable memories that will last a lifetime.</p>
