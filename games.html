@@ -243,94 +243,226 @@
 
         <div class='w3-container'>
             <style>
+                .game-columns {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    /* Allow flex items to wrap to the next line */
+                }
+
                 .game-container {
                     background-color: turquoise;
-                    width: 600px;
-                    height: 700px;
-                    margin-left: auto;
-                    margin-right: auto;
+                    width: 300px;
+                    /* Adjust width as needed */
+                    margin: 10px;
+                    /* Add margin for spacing between columns */
+                    padding: 20px;
+                    /* Add padding inside the container */
+                    box-sizing: border-box;
+                    /* Include padding in width calculation */
                 }
 
                 .game-container img {
-                    width: 500px;
-                    height: 500px;
-                    padding-top: 10px;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
                 }
 
                 .game-container p {
-                    font-size: 12px;
+                    font-size: 14px;
                     color: #000;
-                    padding-left: 50px;
-                    padding-right: 50px;
                     text-align: justify;
                 }
 
                 .game-container button {
                     background-color: #f4de8b;
-                    color:#760404;
+                    color: #760404;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    margin-top: 20px;
                 }
 
                 .game-container button:hover {
-                    background-color: #760404 !important;
-                    color: #f4de8b !important;
+                    background-color: #760404;
+                    color: #f4de8b;
                 }
 
+                /* For desktop view (screens larger than 768px) */
+                @media (min-width: 769px) {
+                    .game-columns {
+                        justify-content: space-between;
+                        /* Align items with space between them */
+                    }
+
+                    .game-container {
+                        width: calc(50% - 20px);
+                        /* Adjust width for two items per row */
+                        /* Subtracting margin from total width */
+                    }
+                }
+
+                /* For mobile view (screens up to 768px) */
+                @media (max-width: 768px) {
+                    .game-container {
+                        width: calc(100% - 20px);
+                        /* Adjust width for one item per row */
+                        /* Subtracting margin from total width */
+                    }
+                }
             </style>
             <!--The Main Events go Here-->
-            <div class='w3-container w3-center w3-padding-32'>
-                <div class='w3-half'>
-                    <div class='game-container'>
-                        <img src='images/games/Dart Board.jpeg'>
-                        <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
-                            shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
-                            haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
-                            whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
-                            star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
-                            who dared to listen.</p>
-                        <a href="#"><button class='w3-button'>Register Now!</button></a>
+            <div class='w3-container w3-center w3-padding-32 game-columns'>
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
+                <!--Start Copy From here-->
+                <div class='game-container'>
+                    <img src='images/games/Dart Board.jpeg'>
+                    <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
+                        shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
+                        haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
+                        whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
+                        star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
+                        who dared to listen.</p>
+                    <a href="#"><button class='w3-button'>Register Now!</button></a>
+                </div>
+                <!--End Copy Over Here-->
 
-                    </div>
-                </div>
-                <div class='w3-half'>
-                    <div class='game-container'>
-                        <img src='images/games/Dart Board.jpeg'>
-                        <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
-                            shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
-                            haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
-                            whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
-                            star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
-                            who dared to listen.</p>
-                        <a href="#"><button class='w3-button'>Register Now!</button></a>
-                    </div>
-                </div>
             </div>
-            <div class='w3-container w3-center w3-padding-32'>
-                <div class='w3-half'>
-                    <div class='game-container'>
-                        <img src='images/games/Dart Board.jpeg'>
-                        <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
-                            shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
-                            haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
-                            whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
-                            star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
-                            who dared to listen.</p>
-                        <a href="#"><button class='w3-button'>Register Now!</button></a>
 
-                    </div>
-                </div>
-                <div class='w3-half'>
-                    <div class='game-container'>
-                        <img src='images/games/Dart Board.jpeg'>
-                        <p>The shimmering moonlight danced across the tranquil surface of the lake, casting enchanting
-                            shadows upon the rippling water. In the distance, a lone wolf howled mournfully, its
-                            haunting melody echoing through the silent night. Amidst the towering trees, a gentle breeze
-                            whispered secrets, rustling the leaves with a soft, rhythmic cadence. Beneath the
-                            star-studded sky, nature's symphony played on, orchestrating a timeless serenade for those
-                            who dared to listen.</p>
-                        <a href="#"><button class='w3-button'>Register Now!</button></a>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
 
