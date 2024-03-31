@@ -28,10 +28,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Electrolize&family=Fontdiner+Swanky&family=Sancreek&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <style>
     body,
     h1,
@@ -45,8 +50,17 @@
     }
 
     p {
-      font-size: 3vh;
+      font-size: 3vw;
+      /* Use vw (viewport width) instead of vh */
       font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      p {
+        font-size: 5vw;
+        text-align: justify !important;
+        /* Adjust font size for smaller screens */
+      }
     }
 
 
@@ -421,7 +435,10 @@
           background-size: cover;
         }
       </style>
-      <div class='parallax-vivante'>
+      <div class = 'w3-hide-medium w3-hide-large'>
+        <img src = 'images/homepage/vivante.jpg' width="100%">
+      </div>
+      <div class='parallax-vivante w3-hide-small'>
       </div>
       <div class='w3-center'>
         <h1 class='coming-soon w3-hide-small' style="font-family: 'Sancreek', serif; font-size: 12vh;">About Vivante
@@ -472,7 +489,10 @@
             color: #f8f7b0 !important;
           }
         </style>
-        <div class="parallax-iiser-tirupati">
+        <div class='w3-hide-medium w3-hide-large'>
+          <img src='images/homepage/iiser tirupati campus.jpeg' width="100%">
+        </div>
+        <div class="parallax-iiser-tirupati w3-hide-small">
 
         </div>
         <div class='w3-container w3-padding-16'>
@@ -490,7 +510,7 @@
               Tirupati
             </h1>
 
-            <div class='w3-center info-iiser' style='text-align: justify; font-family: "Nunito", sans-serif;'>
+            <div class='w3-center' style='text-align: justify; font-family: "Nunito", sans-serif;'>
               <p>IISER Tirupati is the sixth Institute in the chain of IISERs established by the Govt. of India under
                 the Ministry of Education for imparting quality education in basic sciences and for setting up
                 state-of-the-art research facilities for frontline and cutting-edge research in science. </p>
@@ -503,11 +523,14 @@
     </div>
     <div class='w3-container'>
       <!--Vivante Carnival Theme Section-->
-      <div class='w3-center'>
-        <img src='images/homepage/vivante stylized.png' width='100%'>
+      <div class='w3-container'>
+        <div class='w3-center'>
+          <img src='images/homepage/vivante stylized.png' width='100%'>
+        </div>
       </div>
       <div class='w3-center' style="text-align: justify;">
-        <p style = 'font-family: "Lora", serif;'>The theme for Vivante this year is “Carnival”—a gala of entertainment, exciting events, and good music.
+        <p style='font-family: "Lora", serif;'>The theme for Vivante this year is “Carnival”—a gala of entertainment,
+          exciting events, and good music.
           Imagine stepping into a weekend where laughter echoes through the air, and where surprises await at every turn
         </p>
       </div>
@@ -622,7 +645,7 @@
         }
       </style>
       <div class='w3-hide-medium w3-hide-large'>
-        <img src='images/homepage/dj danika at sunburn.jpg' style="width:100% height: auto;">
+        <img src='images/homepage/dj danika at sunburn.jpg' style="width:100%;">
 
       </div>
       <div class="parallax w3-hide-small">
@@ -635,7 +658,8 @@
       </div>
       <div class='w3-container'>
         <div class='w3-center'>
-          <p style="color: #eba7ff; font-family: 'Electrolize', sans-serif;">Get ready to be electrified at Vivante with an unforgettable DJ concert by the
+          <p style="color: #eba7ff; font-family: 'Electrolize', sans-serif;">Get ready to be electrified at Vivante with
+            an unforgettable DJ concert by the
             dynamic artist, Danika!
             Dance into the night to pulsating beats and immersive rhythms. Experience a thrilling journey into the world
             of music, creating unforgettable memories that will last a lifetime.</p>
