@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home | Vivante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/51cbc348d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fontdiner+Swanky&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fontdiner+Swanky&family=Sancreek&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Electrolize&family=Fontdiner+Swanky&family=Sancreek&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h6,
+    p {
+      font-family: "Montserrat", sans-serif;
+      color: #f4de8b;
+    }
+
+    p {
+      font-size: 3vh;
+      /* Use vw (viewport width) instead of vh */
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      p {
+        font-size: 5vw;
+        text-align: justify !important;
+        /* Adjust font size for smaller screens */
+      }
+    }
+
+
+
+    body {
+      background-color: #760404;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h5 {
+      font-family: "Comic Neue", cursive;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.5vh;
+    }
+
+
+    .navbar-button {
+      background-color: #f8f7b0;
+      border: none;
+      display: inline-block;
+      padding: 8px 16px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 0.5s;
+    }
+
+    .navbar-button h5,
+    i {
+      color: #760404;
+      transition: 0.5s;
+    }
+
+    .navbar-button:hover {
+      background-color: #760404;
+      transition: 0.5s;
+
+    }
+
+    .navbar-button:hover h5 {
+      color: #f8f7b0;
+      transition: 0.5s;
+    }
+
+    .navbar-button:hover i {
+      color: #f8f7b0;
+      transition: 0.5s;
+    }
+
+    .w3-btn,
+    .w3-button {
+      border: none;
+      display: inline-block;
+      padding: 8px 16px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      background-color: inherit;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap
+    }
+
+    .w3-button:hover {
+      color: #000 !important;
+      background-color: #ccc !important
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 75px;
+      background: #f8f7b0;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
+</head>
+
+<body class="w3-black">
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style='background-color: #f8f7b0;'>
+    <!-- Avatar image in top left corner -->
+    <img
+      src="https://raw.githubusercontent.com/VivanteIISERTirupati/VivanteIISERTirupati.github.io/main/images/homepage/logo%20reveal%20(1).png"
+      style="width:100%">
+    <a href="https://vivanteiisertirupati.github.io/" class="w3-bar-item w3-padding-large navbar-button">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <h5>HOME</h5>
+    </a>
+    <a href="https://vivanteiisertirupati.github.io/events" class="w3-bar-item w3-center navbar-button ">
+      <i class="fas fa-calendar w3-xxlarge"></i>
+      <h5>EVENTS</h5>
+    </a>
+    <a href="https://vivanteiisertirupati.github.io/gallery" class="w3-bar-item  navbar-button ">
+      <i class="fa fa-picture-o w3-xxlarge"></i><br>
+      <h5>GALLERY</h5>
+    </a>
+    <a href="https://vivanteiisertirupati.github.io/games" class="w3-bar-item w3-center navbar-button ">
+      <i class="fa-solid fa-gamepad w3-xxlarge"></i>
+      <h5>GAMES</h5>
+    </a>
+    <a href="https://vivanteiisertirupati.github.io/merch" class="w3-bar-item w3-center  navbar-button ">
+      <i class="fas fa-tshirt w3-xxlarge"></i>
+      <h5>MERCH</h5>
+    </a>
+    <a href="https://vivanteiisertirupati.github.io/contact" class="w3-bar-item w3-center navbar-button ">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <h5>CONTACT</h5>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+
+  <div class="w3-top">
+    <!-- Navbar on small screens -->
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large"
+      style='background-color: #f8f7b0 ;' href="javascript:void(0);" onclick="myFunction()"
+      title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large"
+      style='background-color: #f8f7b0; color: #760404;'>
+      <a href="https://vivanteiisertirupati.github.io/" class="w3-bar-item w3-button">HOME</a>
+      <a href="https://vivanteiisertirupati.github.io/events" class='w3-bar-item w3-button'>EVENTS</a>
+      <a href=" https://vivanteiisertirupati.github.io/gallery" class="w3-bar-item w3-button">GALLERY</a>
+      <a href='https://vivanteiisertirupati.github.io/games' class='w3-bar-item w3-button'>GAMES</a>
+      <a href="https://vivanteiisertirupati.github.io/merch" class="w3-bar-item w3-button">MERCH</a>
+      <a href="https://vivanteiisertirupati.github.io/contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+  </div>
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+
+
+    <div class='w3-center w3-container'>
+      <div class='w3-center'>
+
+        <div class='w3-container'>
+          <style>
+            .bigEntrance {
+              animation-name: bigEntrance;
+              -webkit-animation-name: bigEntrance;
+              animation-duration: 1.6s;
+              -webkit-animation-duration: 1.6s;
+              animation-timing-function: ease-out;
+              -webkit-animation-timing-function: ease-out;
+              visibility: visible !important;
+            }
+
+            @keyframes bigEntrance {
+              0% {
+                transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+                opacity: 0.2;
+              }
+
+              30% {
+                transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+                opacity: 1;
+              }
+
+              45% {
+                transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              60% {
+                transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              75% {
+                transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              90% {
+                transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              100% {
+                transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            @-webkit-keyframes bigEntrance {
+              0% {
+                -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+                opacity: 0.2;
+              }
+
+              30% {
+                -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+                opacity: 1;
+              }
+
+              45% {
+                -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              60% {
+                -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              75% {
+                -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              90% {
+                -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+
+              100% {
+                -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            .fontdiner-swanky-regular {
+              font-family: "Fontdiner Swanky", serif;
+              font-weight: 400;
+              font-style: normal;
+            }
+
+            .coming-soon {
+              font-family: "Fontdiner Swanky";
+              color: #f4de8b;
+            }
+
+            .slideUp {
+              animation-name: slideUp;
+              -webkit-animation-name: slideUp;
+              animation-duration: 1s;
+              -webkit-animation-duration: 1s;
+              animation-timing-function: ease;
+              -webkit-animation-timing-function: ease;
+              visibility: visible !important;
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(100%);
+                opacity: 1;
+              }
+
+              50% {
+                transform: translateY(-8%);
+                opacity: 1;
+              }
+
+              65% {
+                transform: translateY(4%);
+                opacity: 1;
+              }
+
+              80% {
+                transform: translateY(-4%);
+                opacity: 1;
+              }
+
+              95% {
+                transform: translateY(2%);
+                opacity: 1;
+              }
+
+              100% {
+                transform: translateY(0%);
+                opacity: 1;
+              }
+            }
+
+            @-webkit-keyframes slideUp {
+              0% {
+                -webkit-transform: translateY(100%);
+              }
+
+              50% {
+                -webkit-transform: translateY(-8%);
+              }
+
+              65% {
+                -webkit-transform: translateY(4%);
+              }
+
+              80% {
+                -webkit-transform: translateY(-4%);
+              }
+
+              95% {
+                -webkit-transform: translateY(2%);
+              }
+
+              100% {
+                -webkit-transform: translateY(0%);
+              }
+            }
+          </style>
+          <img class='bigEntrance w3-hide-small'
+            src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
+            style='width: 50%; height: auto;'>
+          <img class='bigEntrance w3-hide-medium w3-hide-large'
+            src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
+            style='width: 100%; height: auto;'>
+          <div class='w3-content w3-center'>
+            <div class='w3-container'>
+              <h1 class='coming-soon w3-hide-small'
+                style="font-family: 'Sancreek', serif; font-size: 12vh; text-align: center;">VIVANTE
+                2024</h1>
+              <h1 class='coming-soon w3-hide-medium w3-hide-large'
+                style="font-family: 'Sancreek', serif; font-size: 9vh;">VIVANTE 2024</h1>
+              <div class='w3-half w3-right'>
+                <h1 class='coming-soon w3-hide-small'>When?</h1>
+                <h1 class='coming-soon w3-hide-medium w3-hide-large' style='font-size: 5vh;'>When?</h1> <br>
+                <h3 class='coming-soon'>5th, 6th and 7th April, 2024</h1>
+              </div>
+              <div class='w3-half w3-left'>
+                <h1 class='coming-soon w3-hide-small'>Where?</h1>
+                <h1 class='coming-soon w3-hide-medium w3-hide-large' style='font-size: 5vh;'>Where?</h1> <br>
+                <h3 class='coming-soon'>IISER Tirupati Permanent campus</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='w3-container w3-padding-32'>
+      <!--The About vivante section-->
+      <style>
+        .parallax-vivante {
+          /* The image used */
+          background-image: url("images/homepage/vivante.jpg");
+
+          /* Set a specific height */
+          min-height: 500px;
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+      <div class='w3-hide-medium w3-hide-large'>
+        <img src='images/homepage/vivante.jpg' width="100%">
+      </div>
+      <div class='parallax-vivante w3-hide-small'>
+      </div>
+      <div class='w3-center'>
+        <h1 class='coming-soon w3-hide-small' style="font-family: 'Sancreek', serif; font-size: 12vh;">About Vivante
+        </h1>
+        <h1 class='coming-soon w3-hide-medium w3-hide-large'
+          style="font-family: 'Sancreek', serif; font-size: 8vh; text-align: center;">About Vivante</h1>
+      </div>
+      <div class='w3-twothird w3-center'>
+        <p style='text-align: justify;'>The Grand Annual celebration of IISER Tirupati, partaken by several, and a
+          platform to see the talents
+          and skills of the IISER Tirupati community, in everything from Dance, Music, Art, Drama and more.</p>
+        <p style='text-align: justify;'>Coming at you this April, with any fun exciting events including on-stage
+          performances, literary
+          events, and many many other competetions. Are you ready to have fun?</p>
+      </div>
+      <div class='w3-third'>
+        <img
+          src='https://raw.githubusercontent.com/SasiMitraB/VivanteIISERTirupati.github.io/main/images/homepage/Vivante%20Clear%20Background%20Logo.png'
+          style='width: 100%; height: auto;'>
+      </div>
+    </div>
+    <div class='w3-container'>
+      <div class='w3-container'>
+        <!--The About IISER Tirupati section-->
+
+        <style>
+          .parallax-iiser-tirupati {
+            /* The image used */
+            background-image: url("images/homepage/IISER\ TIrupati\ Landscape.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .info-iiser {
+            width: 100%;
+            height: 300px;
+          }
+
+          .info-iiser p {
+            font-size: 20px;
+            color: #f8f7b0 !important;
+          }
+        </style>
+        <div class='w3-hide-medium w3-hide-large'>
+          <img src='images/homepage/IISER TIrupati Landscape.jpg' width="100%">
+        </div>
+        <div class="parallax-iiser-tirupati w3-hide-small">
+
+        </div>
+        <div class='w3-container w3-padding-16'>
+          <div class='w3-third'>
+            <img src='images/homepage/iiser tirupati with bushes no background.png' width="100%">
+          </div>
+          <div class='w3-twothird w3-right '>
+            <h1 class='coming-soon w3-center w3-hide-small'
+              style="color:#f8f7b0; font-family: 'Sancreek', serif; font-size: 9vh;">Welcome to
+              IISER Tirupati
+            </h1>
+            <h1 class='coming-soon w3-center w3-hide-medium w3-hide-large'
+              style="color:#f8f7b0; font-family: 'Sancreek', serif; font-size: 8vh; text-align: justify;">Welcome to
+              IISER
+              Tirupati
+            </h1>
+
+            <div class='w3-center' style='text-align: justify; font-family: "Nunito", sans-serif;'>
+              <p>IISER Tirupati is the sixth Institute in the chain of IISERs established by the Govt. of India under
+                the Ministry of Education for imparting quality education in basic sciences and for setting up
+                state-of-the-art research facilities for frontline and cutting-edge research in science. </p>
+              <p>It started academic activity in August 2015 in the spacious transit campus located at Sree Rama
+                Engineering College, Rami Reddy Nagar, Karakambadi Road, Tirupati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='w3-container'>
+      <!--Vivante Carnival Theme Section-->
+      <div class='w3-container'>
+        <div class='w3-center'>
+          <img src='images/homepage/vivante stylized.png' width='100%'>
+        </div>
+      </div>
+      <div class='w3-center' style="text-align: justify;">
+        <p style='font-family: "Lora", serif;'>The theme for Vivante this year is “Carnival”—a gala of entertainment,
+          exciting events, and good music.
+          Imagine stepping into a weekend where laughter echoes through the air, and where surprises await at every turn
+        </p>
+      </div>
+      <div class='w3-container w3-center w3-padding-32'>
+        <style>
+          .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            margin: 0 auto;
+          }
+
+          .cards .red {
+            background-color: #f43f5e;
+          }
+
+          .cards .blue {
+            background-color: #3b82f6;
+          }
+
+          .cards .green {
+            background-color: #22c55e;
+          }
+
+          .cards .card {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            /* Change to column layout */
+            align-items: center;
+            /* Center content horizontally */
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: transform 400ms;
+          }
+
+          .cards .card p.tip {
+            font-size: 1.5em;
+            font-weight: 700;
+            font-family: "Lora", serif;
+          }
+
+          .cards .card p.second-text {
+            font-size: 0.7em;
+            font-family: "Noto Sans", sans-serif;
+          }
+
+          .cards .card:hover {
+            transform: scale(1.1);
+          }
+
+          .cards:hover>.card:not(:hover) {
+            filter: blur(1px);
+            transform: scale(0.9);
+          }
+
+          @media (min-width: 768px) {
+            .cards {
+              flex-direction: row;
+              gap: 50px;
+            }
+
+            .cards .card {
+              height: 200px;
+              flex-grow: 1;
+              max-width: calc((100% / 3) - 15px);
+            }
+          }
+        </style>
+        <div class="cards">
+          <div class="card red">
+            <p class="tip">Stunning Performances</p>
+            <p class="second-text">From well practiced dance routines to soul-stirring music, our stage will come alive
+              with talent from across the campus</p>
+          </div>
+          <div class="card blue">
+            <p class="tip">Thrilling Games and Contests</p>
+            <p class="second-text">Test your skills at carnival-inspired games, win prizes and revel in the spirit of
+              friendly competetion</p>
+          </div>
+          <div class="card green">
+            <p class="tip">Delicious Food Stalls</p>
+            <p class="second-text">Think of a gastronomic adventure with a variety of mouth watering dishes, brought to
+              you from far and near</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='w3-container'>
+      <div class='w3-container'>
+        <style>
+          .parallax-mark {
+            /* The image used */
+            background-image: url("images/homepage/DJ\ mark\ background.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% auto;
+          }
+        </style>
+        <div class='w3-hide-medium w3-hide-large'>
+          <img src='images/homepage/DJ mark background.jpg' style="width:100%;">
+          <img src='images/homepage/DJ Mark.png' style="width: 100%;">
+
+        </div>
+        <div class="parallax-mark w3-hide-small">
+          <div class='w3-half'>
+            <img src='images/homepage/DJ Mark.png' width="120%">
+          </div>
+        </div>
+        <div class='w3-half w3-right w3-hide-small'>
+          <img src="images/homepage/DJ mark timings.svg" width="100%">
+        </div>
+        <div class='w3-half w3-right w3-hide-medium w3-hide-large'>
+          <img src="images/homepage/DJ mark timings.svg" width="100%">
+        </div>
+        <div class='w3-container'>
+          <div class='w3-center'>
+            <p style="color: #f18f8f; font-family: 'Electrolize', sans-serif;">Get ready to groove at Vivante with an
+              electrifying DJ performance by the incomparable DJ Mark! Lose yourself in the pulsating beats and
+              captivating rhythms as you dance the night away. Embark on an exhilarating musical odyssey, filled with
+              euphoric moments and unforgettable experiences that will leave you longing for more.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='w3-container'>
+        <!--DJ Danika Section-->
+        <style>
+          .parallax {
+            /* The image used */
+            background-image: url("images/homepage/dj\ danika\ at\ sunburn.jpg");
+
+            /* Set a specific height */
+            min-height: 500px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% auto;
+          }
+        </style>
+        <div class='w3-hide-medium w3-hide-large'>
+          <img src='images/homepage/dj danika at sunburn.jpg' style="width:100%;">
+          <img src='images/homepage/DJ Danika Stylized Photo.png' style="width: 100%;">
+
+        </div>
+        <div class="parallax w3-hide-small">
+          <div class='w3-half'>
+            <img src='images/homepage/DJ Danika Stylized Photo.png'>
+          </div>
+        </div>
+        <div class='w3-half w3-right w3-hide-small' style="padding-top: 100px;">
+          <img src="images/homepage/DJ timing.svg" width="100%">
+        </div>
+        <div class='w3-half w3-right w3-hide-medium w3-hide-large'>
+          <img src="images/homepage/DJ timing.svg" width="100%">
+        </div>
+        <div class='w3-container'>
+          <div class='w3-center'>
+            <p style="color: #eba7ff; font-family: 'Electrolize', sans-serif;">Get ready to be electrified at Vivante
+              with
+              an unforgettable DJ concert by the
+              dynamic artist, Danika!
+              Dance into the night to pulsating beats and immersive rhythms. Experience a thrilling journey into the
+              world
+              of music, creating unforgettable memories that will last a lifetime.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class='w3-container'>
+        <div class='w3-center'>
+          <img src='images/homepage/vivante stylized.png' width='100%'>
+        </div>
+      </div>
+
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>

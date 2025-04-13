@@ -1,0 +1,493 @@
+/* ------------------------------ */
+/* RESET & GLOBAL STYLES         */
+/* ------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cormorant Garamond";
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container Utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ------------------------------ */
+/* CANVAS FOR FLOATING PARTICLES   */
+/* ------------------------------ */
+#magicCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* ------------------------------ */
+/* BUTTONS                       */
+/* ------------------------------ */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: #ffd700;
+  color: #111;
+}
+.btn-primary:hover {
+  background-color: #e6c200;
+}
+.btn-secondary {
+  background-color: #ffd700;
+  color: #111;
+}
+.btn-secondary:hover {
+  background-color: #e6c200;
+}
+
+/* ------------------------------ */
+/* NAVIGATION BAR                */
+/* ------------------------------ */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fest-logo {
+  height: 60px;
+  width: auto;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* ------------------------------ */
+/* HERO SECTION                  */
+/* ------------------------------ */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("https://via.placeholder.com/1600x900?text=Wizarding+Backdrop") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------ */
+/* SECTIONS                      */
+/* ------------------------------ */
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+.section-title {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+.section-subtitle {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #ddd;
+}
+
+/* Memories / Gallery */
+.memories .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Merchandise */
+.merchandise .merch-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.merch-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.merch-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 215, 0, 0.15);
+}
+.merch-card img {
+  width: 100%;
+}
+.merch-info {
+  padding: 20px;
+  text-align: center;
+}
+.merch-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+.merch-price {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.merch-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* ------------------------------ */
+/* Events & Schedule (Timeline)  */
+/* ------------------------------ */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.timeline-item {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: relative;
+}
+.timeline-item:hover {
+  transform: translateY(-5px);
+}
+.timeline-poster {
+  flex: 0 0 250px;
+  max-width: 250px;
+  overflow: hidden;
+}
+.timeline-poster img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+.timeline-item:hover .timeline-poster img {
+  transform: scale(1.05);
+}
+.timeline-content {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+.timeline-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+.timeline-content .time,
+.timeline-content .venue {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+.timeline-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  opacity: 0;
+}
+.timeline-item.active .timeline-details {
+  opacity: 1;
+  margin-top: 10px;
+  max-height: 200px;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 5px;
+  height: calc(100% - 30px);
+  background: #ffd700;
+  border-radius: 5px;
+}
+
+/* ------------------------------ */
+/* CONTACT FORM                  */
+/* ------------------------------ */
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ffd700;
+}
+
+/* ------------------------------ */
+/* FOOTER                        */
+/* ------------------------------ */
+.footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+.footer-container {
+  text-align: center;
+}
+.footer-text {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.catalog-title {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #ffd700;
+  text-align: center;
+}
+
+/* Both catalogs displayed in a responsive grid */
+.individual-catalog, 
+.combo-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Combo images styling: two images side by side */
+.combo-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.combo-images img {
+  width: 130px;  /* increased width */
+  height: 130px; /* increased height */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Timeline Styles */
+.timeline {
+  background: #0b0f1a;
+  color: white;
+  padding: 60px 20px;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 50px auto;
+  padding-left: 25px;
+  border-left: 3px solid #ffd700;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -13px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  background: #ffd700;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ffd700;
+}
+
+.timeline-datetime {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.timeline-datetime .date {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.timeline-datetime .time {
+  font-size: 1.1rem;
+  color: #f5e1a4;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #fff;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.event-card-horizontal {
+  display: flex;
+  background-color: #1b2238;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.event-card-horizontal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 24px rgba(255, 215, 0, 0.25);
+}
+
+.event-card-horizontal img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+  padding: 10px;
+}
+
+.event-info {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.event-info h3 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+.event-date {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f5e1a4;
+}
+
+.event-time {
+  font-size: 1.3rem;
+  color: #e0e0e0;
+}
+@media (max-width: 768px) {
+  .event-card-horizontal {
+    flex-direction: column;
+  }
+
+  .event-card-horizontal img,
+  .event-info {
+    width: 100%;
+  }
+
+  .event-info {
+    padding: 20px;
+  }
+
+  .event-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .event-date {
+    font-size: 1.2rem;
+  }
+
+  .event-time {
+    font-size: 1.1rem;
+  }
+}
+
